@@ -4,13 +4,9 @@ angular.module('Testing', ['ui.bootstrap'])
         //$scope.testdata="yash";
 		$scope.gridData;
         dataService.getData().then(function(response) {
-											console.log(response);
             $scope.gridData = response;
-          
         });
-		
-		
-		
+	
 		 $scope.oneAtATime = true;
 
   $scope.groups = [
