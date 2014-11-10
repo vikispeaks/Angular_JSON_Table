@@ -4,7 +4,7 @@ angular.module('Testing')
         function _getData() {
             var deferred = $q.defer();
            // var portfolioID = portfolioService.getPortfolioId($location.path());
-            var url = '/Angular/data/data.json';
+            var url = '../data/data.json';
             $http.get(url).then(
                 function(response) {
                     deferred.resolve(response.data.table_data);
